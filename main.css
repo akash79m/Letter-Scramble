@@ -1,0 +1,147 @@
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    background: linear-gradient(to top left, rgb(74, 211, 103), #0c3b03);
+}
+
+#game-title {
+    margin-top: 50px;
+    text-align: center;
+    border: 3px dotted;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    background-color: white;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+    border-radius: 12px;
+}
+
+#look-for {
+    position: absolute;
+    top: 355px;
+    left: 900px;
+    text-align: center;
+}
+
+#search-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+    max-width: 500px;
+    height: 450px;
+    justify-content: stretch;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 5px double black;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: white;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+}
+
+.object {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.object:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.object:active {
+    background-color: red;
+}
+
+.targetObject:active {
+    background-color: lightgreen;
+}
+
+#play-btn {
+    position: absolute;
+    left: 850px;
+    font-size: 30px;
+    color: black;
+    background-color: black;
+    border-radius: 12px;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+}
+
+p#Time {
+    flex: 0 1 20%;
+    font-size: 800%;
+    float: right;
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+#instructions {
+    background-color: white;
+    flex: 0 1 30%;
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: black;
+    padding: 20px 15px;
+    max-width: 20%;
+    border: dashed black;
+    text-align: justify;
+    float: left;
+    overflow: auto;
+    transition: 0.3s;
+    font-size: 15px;
+    position: static;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+}
+
+#instructions:hover {
+    background-color: greenyellow;
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#info {
+    display: inline-block;
+    border: 5px inset;
+    padding: 20px 20px;
+    margin-left: 600px;
+}
+
+#textarea {
+    color: #000;
+    padding: 2em;
+    margin-top: 10em;
+    margin-left: 15em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+}
+
+#main-footer {
+    background: #333;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    background: linear-gradient(to top left, #444, #d9dfd8);
+}

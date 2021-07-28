@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter Scramble</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <h1 id="game-title">Letter Scramble</h1>
+
+    <span id="info">
+      <form method="GET">
+        <p>
+          <label for="firstName">First name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="first"
+            placeholder="Enter Your First Name"
+          />
+        </p>
+        <p>
+          <label for="lastName">Last name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="last"
+            placeholder="Enter Your Last Name"
+          />
+        </p>
+        <p>
+          <input type="submit" value="Submit" />
+        </p>
+      </form>
+    </span>
+
+    <div id="container">
+      <div id="instructions">
+        <h2>Instructions to play ?</h2>
+        <ul>
+          <li>
+            To start the game, first enter your credentials in the provided
+            form.
+          </li>
+          <li>You have to find the given letter in the "LOOK FOR" area.</li>
+          <li>As you click the play button The game will start.</li>
+          <li>
+            The letters will be Scrambelled after every second in the "Search"
+            Area.
+          </li>
+          <li>
+            When you click a wrong letter the letter will appear with a red
+            background.
+          </li>
+          <li>This indicate that you have selected wrong letter.</li>
+          <li>
+            When you select correct letter. The background color will change to
+            green and the timmer stops.
+          </li>
+          <li>You win!</li>
+        </ul>
+      </div>
+
+      <h2 id="look-for"></h2>
+      <div id="search-area">
+        <div class="object" id="a">a</div>
+        <div class="object" id="b">b</div>
+        <div class="object" id="c">c</div>
+        <div class="object" id="d">d</div>
+        <div class="object" id="e">e</div>
+        <div class="object" id="f">f</div>
+        <div class="object" id="g">g</div>
+        <div class="object" id="h">h</div>
+        <div class="object" id="i">i</div>
+        <div class="object" id="j">j</div>
+        <div class="object" id="k">k</div>
+        <div class="object" id="l">l</div>
+        <div class="object" id="m">m</div>
+        <div class="object" id="n">n</div>
+        <div class="object" id="o">o</div>
+        <div class="object" id="p">p</div>
+        <div class="object" id="q">q</div>
+        <div class="object" id="r">r</div>
+        <div class="object" id="s">s</div>
+        <div class="object" id="t">t</div>
+        <div class="object" id="u">u</div>
+        <div class="object" id="v">v</div>
+        <div class="object" id="w">w</div>
+        <div class="object" id="x">x</div>
+        <div class="object" id="y">y</div>
+        <div class="object" id="z">z</div>
+      </div>
+    </div>
+
+    <button
+      id="play-btn"
+      onclick="play(); myTimer = setInterval(myCounter, 1000)"
+    >
+      Play
+    </button>
+
+    <p id="Time"></p>
+
+    <form>
+      <textarea name="Feedback" id="textarea" cols="100" rows="5">
+Enter your suggestions </textarea
+      >
+    </form>
+    <footer id="main-footer">
+      <p>Copyright &copy;2020 Letter Scramble</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
